@@ -1,7 +1,7 @@
 FROM node:14
-RUN mkdir /RP
-ADD . /RP
-WORKDIR /RP
+RUN mkdir /SDC-Q-A
+ADD . /SDC-Q-A
+WORKDIR /SDC-Q-A
 RUN npm i
-EXPOSE 80
+EXPOSE 3000
 CMD ["npm", "start"]
