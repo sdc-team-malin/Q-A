@@ -32,11 +32,12 @@ CREATE TABLE answers_photos (
   photo_url VARCHAR(400)
 );
 
-\COPY questions FROM '/Users/ryanpannone/HR/SDC/RP/csv-files/questions (1).csv' DELIMITER ',' CSV HEADER;
+\COPY questions FROM '/Users/ryanpannone/HR/SDC-Q-A/csv-files/questions (1).csv' DELIMITER ',' CSV HEADER;
 
 \COPY answers FROM '/Users/ryanpannone/HR/SDC/RP/csv-files/answers (1).csv' DELIMITER ',' CSV HEADER;
 
-\COPY answers_photos FROM '/Users/ryanpannone/HR/SDC/RP/csv-files/answers_photos (1).csv' DELIMITER ',' CSV HEADER;
+\COPY answers_photos FROM '/Users/ryanpannone/HR/SDC-Q-A/csv-files/answers_photos (1).csv' DELIMITER ',' CSV HEADER;
+
 
 CREATE SEQUENCE qid START 3521635;
 
@@ -46,4 +47,9 @@ CREATE SEQUENCE aid START 12392947;
 
 CREATE SEQUENCE pid START 3717893;
 
+create index q_table_index on questions(product_id);
+
+create index answers_table_index on answers(question_id);
+
+create index photos_table_index on answers_photos(answer_id);
 
