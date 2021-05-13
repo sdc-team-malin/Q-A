@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sdc-team-malin/RP.git"
+    "url": "git+https://github.com/sdc-team-malin/Q-A"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sdc-team-malin/RP/issues"
+    "url": "https://github.com/sdc-team-malin/Q-A/issues"
   },
-  "homepage": "https://github.com/sdc-team-malin/RP#readme",
+  "homepage": "https://github.com/sdc-team-malin/Q-A#readme",
   "dependencies": {
     "csv-parser": "^3.0.0",
     "express": "^4.17.1",
